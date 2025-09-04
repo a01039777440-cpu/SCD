@@ -22,11 +22,11 @@
     <!-- <header></header> -->
     <header>
         <div class="inner">
-            <h1 class="logo"><a href="#void"><img src="./images/main_logo.png" alt="메인로고"></a></h1>
+            <h1 class="logo"><a href="#"><img src="./images/main_logo.png" alt="메인로고"></a></h1>
             <div class="main-menu">
                 <ul class="menu-list">
                     <li><a href="#void">기업소개<span class="menu-icon"><img src="./images/cross.svg" alt="십자가"></span></a>
-                        <ul>
+                        <ul class="sub-menu">
                             <li><a href="#void">인사말</a></li>
                             <li><a href="#void">미션&비젼</a></li>
                             <li><a href="#void">연혁</a></li>
@@ -35,7 +35,7 @@
                         </ul>
                     </li>
                     <li><a href="#void">제품정보<span class="menu-icon"><img src="./images/cross.svg" alt="십자가"></span></a>
-                        <ul>
+                        <ul class="sub-menu">
                             <li><a href="#void">일반의약품</a></li>
                             <li><a href="#void">전문의약품</a></li>
                             <li><a href="#void">의약외품</a></li>
@@ -44,7 +44,7 @@
                         </ul>
                     </li>
                     <li><a href="#void">기업홍보<span class="menu-icon"><img src="./images/cross.svg" alt="십자가"></span></a>
-                        <ul>
+                        <ul class="sub-menu">
                             <li><a href="#void">삼천당소식</a></li>
                             <li><a href="#void">보도자료</a></li>
                             <li><a href="#void">영상광고</a></li>
@@ -53,7 +53,7 @@
                         </ul>
                     </li>
                     <li><a href="#void">연구개발<span class="menu-icon"><img src="./images/cross.svg" alt="십자가"></span></a>
-                        <ul>
+                        <ul class="sub-menu">
                             <li><a href="#void">R&D</a></li>
                             <li><a href="#void">중앙연구소</a></li>
                             <!-- <li><a href="#void"></a></li>
@@ -62,7 +62,7 @@
                         </ul>
                     </li>
                     <li><a href="#void">기업IR<span class="menu-icon"><img src="./images/cross.svg" alt="십자가"></span></a>
-                        <ul>
+                        <ul class="sub-menu">
                             <li><a href="#void">재무정보</a></li>
                             <li><a href="#void">실적발표</a></li>
                             <li><a href="#void">공시</a></li>
@@ -106,20 +106,21 @@
             <div class="main-navi">
                 <ul class="navi">
                     <li>
-                        <a href="#void">Home</a><span class="navi-icon"><img src="./images/circle.svg" alt=""></span>
+                        <a href="#void">Home</a><span class="navi-icon"><img src="./images/circle.svg" alt="네비원"></span>
                     </li>
                     <li>
-                        <a href="#void">Product</a><span class="navi-icon"><img src="./images/circle.svg" alt=""></span>
+                        <a href="#void">Product</a><span class="navi-icon"><img src="./images/circle.svg"
+                                alt="네비원"></span>
                     </li>
                     <li>
                         <a href="#void">Promotion</a><span class="navi-icon"><img src="./images/circle.svg"
-                                alt=""></span>
+                                alt="네비원"></span>
                     </li>
                     <li>
-                        <a href="#void">News</a><span class="navi-icon"><img src="./images/circle.svg" alt=""></span>
+                        <a href="#void">News</a><span class="navi-icon"><img src="./images/circle.svg" alt="네비원"></span>
                     </li>
                     <li>
-                        <a href="#void">SCD</a><span class="navi-icon"><img src="./images/circle.svg" alt=""></span>
+                        <a href="#void">SCD</a><span class="navi-icon"><img src="./images/circle.svg" alt="네비원"></span>
                     </li>
                 </ul>
             </div>
@@ -130,23 +131,75 @@
                 <h2 class="title">PRODUCT</h2>
                 <div class="slider-list-wrap">
                     <div class="slider-list">
-                        <div class="slider">slider1</div>
-                        <div class="slider">slider2</div>
-                        <div class="slider">slider3</div>
+                        <div class="product">
+                            <a href="#void">
+                                <div class="product-head">
+                                    <span class="tag">전문의약품</span>
+                                    <h3 class="product-name">엘사반정</h3>
+                                    <p class="product-manual">무방부제 안구건조증 치료제</p>
+                                    <p>#각결막 상피장애<br>#건성안증후군 내인성질환</p>
+
+                                </div>
+                                <div class="product-img">
+                                    <img src="./images/product-1.png" alt="제품사진1">
+                                </div>
+                            </a>
+                        </div>
+                        <div class="product product-active">
+                            <a href="#void">
+                                <div class="product-head head-active">
+                                    <span class="tag">일반의약품</span>
+                                    <h3 class="product-name">삼진트론정</h3>
+                                    <p class="product-manual">무방부제 안구건조증 치료제</p>
+                                    <p>#각결막 상피장애<br>#건성안증후군 내인성질환</p>
+
+                                </div>
+                                <div class="product-img">
+                                    <img src="./images/product-2.png" alt="제품사진2">
+                                </div>
+                            </a>
+                        </div>
+                        <div class="product">
+                            <a href="#void">
+                                <div class="product-head">
+                                    <span class="tag">신제품</span>
+                                    <h3 class="product-name">페트라정</h3>
+                                    <p class="product-manual">무방부제 안구건조증 치료제</p>
+                                    <p>#각결막 상피장애<br>#건성안증후군 내인성질환</p>
+                                </div>
+                                <div class="product-img">
+                                    <img src="./images/product-3.png" alt="제품사진3">
+                                </div>
+                            </a>
+                        </div>
                     </div>
                     <ul class="arrow-btn">
-                        <li class="left-btn"><a href="#void">left</a></li>
-                        <li class="right-btn"><a href="#void">right</a></li>
+                        <li class="left-btn"><a href="#void">
+                                <img src="./images/product-arrow-left.png" alt="화살표(좌)">
+                            </a></li>
+                        <li class="right-btn"><a href="#void">
+                                <img src="./images/product-arrow-right.png" alt="화살표(우)">
+                            </a></li>
                     </ul>
                 </div>
             </div>
         </section>
 
         <section class="promotion">
-            <div>
+            <div class="promotion-head">
                 <h2 class="title">PROMOTION</h2>
-
             </div>
+            <div class="youtube">
+                <iframe src="https://www.youtube.com/embed/jwjD4QpowTU" title="YouTube video player"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen>
+                </iframe>
+                <p>유투브 여기에</p>
+            </div>
+            <div>
+                <p>기업홍보 바로가기</p>
+            </div>
+
         </section>
         <section class="news">
             <div>
