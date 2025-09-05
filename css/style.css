@@ -486,9 +486,10 @@ section h2 {
     line-height: 2;
     margin-bottom: 3rem;
     display:-webkit-box;
-    -webkit-line-clamp: 5;
     -webkit-box-orient: vertical;
     overflow: hidden;
+    -webkit-line-clamp:5;
+    line-clamp: 5; 
     text-overflow: ellipsis;  
 }
 
