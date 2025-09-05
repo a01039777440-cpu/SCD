@@ -215,7 +215,7 @@ header .inner {
 
 section {
     background: green;
-    border: 1px solid black;
+    /* border: 1px solid black; */
     height: 700px;
     margin: 0 auto;
 }
@@ -224,7 +224,7 @@ section h2 {
     color: red;
     font-size: 3rem;
     font-weight: 800;
-    padding: 1% 3%;
+    padding: 3% 3% 0;
 
 }
 
@@ -255,6 +255,10 @@ section h2 {
     border-radius: 10px;
     /* background-color: hotpink; */
     flex: 0 0 20%;
+}
+
+.product>a:hover .tag {
+    color: red;
 }
 
 .slider-list>.product-active {
@@ -288,6 +292,7 @@ section h2 {
     border-radius: 10px;
 }
 
+
 .product-name {
     font-size: 2rem;
     padding: 20px 0;
@@ -295,10 +300,12 @@ section h2 {
 
 .product .product-img {
     border-radius: 0 0 20px 20px;
+
 }
 
 .product .product-img>img {
     width: 100%;
+
 }
 
 .product p {
@@ -327,12 +334,30 @@ section h2 {
     right: 0;
 }
 
+.dot-slide-list {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 20px;
+}
+
+.dot {
+    width: 15px;
+    height: 15px;
+    background: #ddd;
+    border-radius: 50%;
+}
+
+.dot.active {
+    background: red;
+}
+
 .promotion {
     background-color: #eee;
 }
 
 .promotion>div {
-    border: 1px solid red;
+    /* border: 1px solid red; */
     width: 1600px;
     margin: 0 auto;
 }
@@ -340,22 +365,159 @@ section h2 {
 .youtube {
     width: 100%;
     height: 600px;
-    border: 1px solid red;
-    background: blue;
+    /* background: blue; */
     position: relative;
-    padding: 100px 0;    
-    
+
 }
 
-.youtube iframe {
-    border: 1px solid red;
+.youtube>iframe {
+    /* border: 1px solid green; */
+    position: absolute;
+    top: 5%;
+    right: 50%;
+    transform: translateX(50%);
+    width: 60%;
+    height: 90%;
+    border: 0;
+    border-radius: 20px;
+}
+
+.youtube-info {
+    top: 200px;
+    left: 150px;
+    width: 300px;
+    height: 200px;
+    background: red;
+    color: #fff;
+    position: absolute;
+    opacity: 0.8;
+    border-radius: 20px;
+    display: grid;
+    padding-left: 30px;
+}
+
+/* .youtube-info>div{
+    background: pink;
+    height: 100%;      
+} */
+
+/* .youtube-info .info-icon {
+    border: 1px solid black;       
+} */
+.youtube-info .info-icon>img {
+    top: 50%;
+    transform: translateY(50%)
+}
+
+.youtube-info>p {
+    /* border: 1px solid black; */
+    font-size: 1.3rem;
+    display: flex;
+    align-items: center;
+}
+
+.youtube-info>p .info-arrow {
+    /* border: 1px solid black; */
+    height: 2rem;
+    padding-left: 20px;
+    font-size: 2rem;
+    line-height: 2rem;
+}
+
+.info-underline {
+    /* border: 1px solid black; */
+    width: 80px;
+    height: 5px;
+    background: #fff;
+    border-radius: 2px;
+    top: 0;
+}
+
+.news {
+    background: rgba(0, 255, 0, 0.1);
+    max-width: 1600px;
+
+}
+
+.news-wrap {
+    border: 1px solid black;
+    display: flex;
+    /* gap: 20px; */
+    justify-content: space-evenly;
+    margin: 30px 0;
+}
+
+.news-list {
+    position: relative;
+    border-radius: 20px;
+    flex: 0 0 300px;
+    margin-top: 10px;
+    padding: 30px 30px 60px;
+    text-align: left;
+}
+
+.news-list:nth-child(odd) {
+  background-color: #555;
+  color: #fff;  
+}
+
+
+.news-list:nth-child(even) {
+  background-color: #ccc;  
+  color: #555;
+}
+
+.news-date {
+    border: 10px solid #fff;
     position: absolute;
     top: 0;
-    right: 0;    
-    width: 60%;
-    height: 100%;    
-    border-radius: 12px;    
+    right: 0;
+    padding: 5px 20px;
+    border-radius: 20px;
+    font-size: 0.9rem;
 }
+.news-list h3 {
+    font-size: 1.2rem;
+    font-weight: 700;
+    margin: 3rem 0;
+}
+
+.news-list p {
+    line-height: 2;
+    margin-bottom: 3rem;
+    display:-webkit-box;
+    -webkit-line-clamp: 5;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;  
+}
+
+.plus-btn {
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    width: 60px;
+    height: 60px;
+    background: #e60000;
+    color: #fff;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    font-size: 3rem;
+    line-height: 3rem;
+    font-weight: 100;
+}
+
+
+
+
+
+
+
+
+
+
+
 
 
 
