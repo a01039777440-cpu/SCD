@@ -172,6 +172,8 @@ header .inner {
 
 .main-slider div img {
     width: 100%;
+    /* border: 1px solid red; */
+    border-radius: 20px;    
 }
 .scroll-down {
   position: absolute;
